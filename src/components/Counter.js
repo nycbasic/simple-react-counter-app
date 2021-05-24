@@ -10,7 +10,7 @@ const Counter = (props) => {
 		decreaseTwo,
 		reset,
 	} = props;
-    
+
 	return (
 		<div className='card'>
 			<div className='card-header'>Simple Counter</div>
@@ -19,7 +19,6 @@ const Counter = (props) => {
 					<div className='col-sm'>
 						<h1>Total: {counter1}</h1>
 						<a
-							href='#'
 							className='btn btn-primary'
 							id='inc-btn-one'
 							onClick={increaseOne}
@@ -27,7 +26,6 @@ const Counter = (props) => {
 							Increase
 						</a>
 						<a
-							href='#'
 							className='btn btn-primary'
 							id='dec-btn-one'
 							onClick={decreaseOne}
@@ -38,7 +36,6 @@ const Counter = (props) => {
 					<div className='col-sm'>
 						<h1>Total: {counter2}</h1>
 						<a
-							href='#'
 							className='btn btn-primary'
 							id='inc-btn-two'
 							onClick={increaseTwo}
@@ -46,7 +43,6 @@ const Counter = (props) => {
 							Increase
 						</a>
 						<a
-							href='#'
 							className='btn btn-primary'
 							id='dec-btn-two'
 							onClick={decreaseTwo}
@@ -57,7 +53,7 @@ const Counter = (props) => {
 				</div>
 			</div>
 			<div className='card-footer'>
-				<a href='#' className='btn btn-primary' onClick={reset}>
+				<a className='btn btn-primary' onClick={reset}>
 					Reset
 				</a>
 			</div>
